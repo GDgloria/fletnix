@@ -1,0 +1,51 @@
+  body{
+    background: F6F6F6;
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Koulen', cursive;
+    background: white;
+    color: #2B81B9
+  }
+
+  img {
+  border-radius: 10px;
+  width:80%;
+  }
+
+#fletnix{
+    background: black;
+    color: white;
+    margin: 0px;
+    background-image:url("../img/fons.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+      }
+
+  #llistat_pellicules{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background: #2B81B9;
+    justify-content: center;
+  }
+
+  .peli {
+    width: 15%;
+    color:white;
+    background:black;
+    margin:10px;
+    border-radius: 10px;
+  }
+
+.estrelles {
+  width: 25px;
+  display:flex;
+
+  }
