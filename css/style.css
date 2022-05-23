@@ -9,7 +9,9 @@
   h2 {
     font-family: 'Koulen', cursive;
     background: white;
-    color: #2B81B9
+    color: #2B81B9;
+    box-shadow: 20px 5px 35px white;
+    margin-bottom: 40px;
   }
 
   img {

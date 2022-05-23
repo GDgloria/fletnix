@@ -1,6 +1,7 @@
 $.getJSON("php/pellicules_list.php", function(pellicules){
   console.log(pellicules);
 
+  
   for (n=0; n<pellicules.length; n++){
 
     var estrelles = "";
