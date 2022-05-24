@@ -5,6 +5,13 @@ body{
   background: black;
 }
 
+#description_slide{
+  font-size: 12px;
+  color:white;
+}
+.slider{
+  width: 100%;
+}
 .info_slider{
   position: absolute;
   width: 100%;

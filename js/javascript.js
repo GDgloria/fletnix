@@ -1,7 +1,7 @@
 $.getJSON("php/pellicules_list.php", function(pellicules){
   console.log(pellicules);
 
-  
+
   for (n=0; n<pellicules.length; n++){
 
     var estrelles = "";
@@ -9,6 +9,14 @@ $.getJSON("php/pellicules_list.php", function(pellicules){
       estrelles = "<img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
     }else if (pellicules[n]["puntuacio"] == 1) {
       estrelles = "<img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
+    }else if (pellicules[n]["puntuacio"] == 2) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
+    }else if (pellicules[n]["puntuacio"] == 3) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
+    }else if (pellicules[n]["puntuacio"] == 4) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png>";
+    }else if (pellicules[n]["puntuacio"] == 5) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png>";
     }else{
       estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png>";
     }
@@ -18,8 +26,8 @@ $.getJSON("php/pellicules_list.php", function(pellicules){
     document.getElementById('llistat_pellicules').innerHTML +=
     "<article class=peli>"+
       "<h2>"+pellicules[n]["titol"]+"</h2>"+
-      "<img src=img/covers/"+pellicules[n]["image"]+".jpg>"+
-      "<h1>"+pellicules[n]["director"]+"</h1>"+
+      "<img class=covers src=img/covers/"+pellicules[n]["image"]+".jpg>"+
+      "<h1 id=director>"+pellicules[n]["director"]+"</h1>"+
       "<p>"+pellicules[n]["any"]+"</p>"+
       "<p>"+pellicules[n]["pais"]+"</p>"+
       "<p class=estrelles>"+estrelles+"</p>"+

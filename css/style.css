@@ -5,6 +5,14 @@
     margin: 0;
     text-align: center;
   }
+h1{
+  color: white;
+  font-size:15px;
+}
+
+#director{
+  font-size: 20px;
+}
 
   h2 {
     font-family: 'Koulen', cursive;
@@ -14,7 +22,7 @@
     margin-bottom: 40px;
   }
 
-  img {
+.covers {
   border-radius: 10px;
   width:80%;
   }
@@ -31,7 +39,7 @@
   #llistat_pellicules{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     background: #2B81B9;
@@ -46,8 +54,6 @@
     border-radius: 10px;
   }
 
-.estrelles {
-  width: 25px;
-  display:flex;
-
-  }
+.estrelles img {
+  width: 10%;
+}
