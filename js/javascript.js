@@ -10,13 +10,21 @@ $.getJSON("php/pellicules_list.php", function(pellicules){
     }else if (pellicules[n]["puntuacio"] == 1) {
       estrelles = "<img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
     }else if (pellicules[n]["puntuacio"] == 2) {
-      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
     }else if (pellicules[n]["puntuacio"] == 3) {
-      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png><img src=img/stars/star_off.png>";
     }else if (pellicules[n]["puntuacio"] == 4) {
-      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png>";
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_off.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png>";
     }else if (pellicules[n]["puntuacio"] == 5) {
-      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png>";
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png>";
+    }else if (pellicules[n]["puntuacio"] == 6) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_off.png><img src=img/stars/star_half.png>";
+    }else if (pellicules[n]["puntuacio"] == 7) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_half.png><img src=img/stars/star_off.png>";
+    }else if (pellicules[n]["puntuacio"] == 8) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_off.png>";
+    }else if (pellicules[n]["puntuacio"] == 9) {
+      estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png>";
     }else{
       estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png>";
     }
