@@ -21,16 +21,15 @@ $.getJSON("php/pellicules_list.php", function(pellicules){
       estrelles = "<img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png><img src=img/stars/star_on.png>";
     }
 
-
-
     document.getElementById('llistat_pellicules').innerHTML +=
     "<article class=peli>"+
       "<h2>"+pellicules[n]["titol"]+"</h2>"+
-      "<img class=covers src=img/covers/"+pellicules[n]["image"]+".jpg>"+
+      "<a href='video.html'><img class=covers src=img/covers/"+pellicules[n]["image"]+".jpg></a>"+
       "<h1 id=director>"+pellicules[n]["director"]+"</h1>"+
       "<p>"+pellicules[n]["any"]+"</p>"+
       "<p>"+pellicules[n]["pais"]+"</p>"+
       "<p class=estrelles>"+estrelles+"</p>"+
+      "<a href='https://www.google.com/search?q="+pellicules[n]["titol"]+" "+["director"]+"'><img src=img/icons/google.png></a>"
     "</article>";
   }
 
