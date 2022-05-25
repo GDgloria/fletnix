@@ -1,0 +1,77 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+    }
+
+article {
+  background: #fffcf5 ;
+  width:45%;}
+
+label {
+           display: inline-block;
+           width: 200px;
+           padding: 20px;
+        }
+
+div {
+  display:flex;
+  justify-content:column;
+  padding:10px;
+    }
+
+p{
+  font-style: italic;
+  color:#a4a5a6;
+  font-size:14px;
+  padding: 20px;
+
+}
+h2{
+  font-family: 'Bungee', cursive;
+  background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(37,150,190,1) 63%);
+  text-align: center;
+  font-size:30px;
+  background: #2596be;
+  color: #eeeee4;
+
+    }
+#enviar{
+  width: 10%;
+  padding:10px;
+  margin-right:10px;
+  background: #2596be;
+  border-radius: 5px;
+  color:white;
+}
+
+#cancel·lar{
+  width: 15%;
+  padding:10px;
+  margin-right:10px;
+  background: #eab676;
+  border-radius: 5px;
+  color:white;
+  }
+#login{
+  background: #edd1ff;
+  border: #7ac2b0 3px solid;
+  border-radius: 5px;
+}
+
+
+#botones{
+  display: flex;
+  justify-content:right;
+
+}
+span{
+  color:red;
+}
+#observacions{
+  padding:10px;
+  display: block;
+
+}
+#error_nom{
+  color: red;
+}

@@ -61,3 +61,14 @@
   .estrelles img {
     width: 10%;
   }
+
+
+
+/*Botó afegir pel·lícula*/
+#afegir {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  background: white;
+  border-radius: 13px;
+}
