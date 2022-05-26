@@ -1,74 +1,122 @@
-    body{
-      background: F6F6F6;
-      font-family: 'Koulen', cursive;
-      font-size: 40px;
-      margin: 0;
-      text-align: center;
-      }
+/*COS*/
+
+body{
+    background: F6F6F6;
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    }
+
+/*CAPÇALRA*/
+
+#fletnix{
+    background: black;
+    color: white;
+    margin: 0px;
+    background-image:url("../img/fons.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+        }
   h1{
     color: white;
     font-size:15px;
     }
 
-  #director{
-    font-size: 20px;
+  h2 {
+    font-family: 'Koulen', cursive;
+    background: white;
+    color: #2B81B9;
+    box-shadow: 20px 5px 35px white;
+    margin-bottom: 40px;
     }
 
-    #video{
-      width: 100%;
-    }
-
-    h2 {
-      font-family: 'Koulen', cursive;
-      background: white;
-      color: #2B81B9;
-      box-shadow: 20px 5px 35px white;
-      margin-bottom: 40px;
-      }
+/*PART INFERIOR*/
 
   .covers {
     border-radius: 10px;
     width:80%;
     }
 
-  #fletnix{
-      background: black;
-      color: white;
-      margin: 0px;
-      background-image:url("../img/fons.jpg");
-      background-repeat:no-repeat;
-      background-size: 100%;
-        }
-
-    #llistat_pellicules{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content: space-around;
-      font-family: 'Roboto', sans-serif;
-      font-size: 12px;
-      background: #2B81B9;
-      justify-content: center;
+  #llistat_pellicules{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background: #2B81B9;
     }
 
-    .peli {
-      width: 15%;
-      color:white;
-      background:black;
-      margin:10px;
-      border-radius: 10px;
-    }
+  .peli {
+    width: 15%;
+    color:white;
+    background:black;
+    margin:10px;
+    border-radius: 10px;
+      }
 
-  .estrelles img {
-    width: 10%;
-  }
+    #director{font-size: 20px;}
 
+    .estrelles img {width: 10%;}
 
+    #video{width: 100%;}
+
+a{text-decoration:none;}
 
 /*Botó afegir pel·lícula*/
-#afegir {
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
-  background: white;
-  border-radius: 13px;
-}
+    #afegir {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+      display:inline-block;
+      justify-content: flex-end;
+
+      --glow-color: rgb(217, 176, 255);
+     --glow-spread-color: rgba(191, 123, 255, 0.781);
+     --enhanced-glow-color: rgb(231, 206, 255);
+     --btn-color: rgb(100, 61, 136);
+     border: .25em solid var(--glow-color);
+     padding: 1em 3em;
+     color: var(--glow-color);
+     font-size: 15px;
+     font-weight: bold;
+     background-color: var(--btn-color);
+     border-radius: 1em;
+     outline: none;
+     box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+     text-shadow: 0 0 .5em var(--glow-color);
+     transition: all 0.3s;
+    }
+
+    #afegir::after {
+     pointer-events: none;
+     content: "";
+     top: 120%;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: var(--glow-spread-color);
+     filter: blur(2em);
+     opacity: .7;
+     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+
+    #afegir:hover {
+     color: var(--btn-color);
+     background-color: var(--glow-color);
+     box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 2em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    }
+
+    #afegir:active {
+     box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+    }
+
+  #google{
+    width: 30%;
+  }

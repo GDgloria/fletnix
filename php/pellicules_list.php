@@ -6,7 +6,7 @@
   $basededades = "filmoteca";
   $taula = "pellicules";
 
-  $sql = "SELECT * FROM pellicules LIMIT 25"; //consulta
+  $sql = "SELECT * FROM pellicules ORDER BY id DESC LIMIT 24"; //consulta
 
   //fem la connexió
   $conn = new mysqli($servidor, $usuari, $contrasenya, $basededades);

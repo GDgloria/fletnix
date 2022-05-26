@@ -15,9 +15,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Bungee&family=Fahkwang&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto&display=swap" rel="stylesheet">
 
 	<!-- Enllaç a l'arxiu CSS Extern -->
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/formulari.css" type="text/css"/>
 
 	<!-- Enllaç a Javascript Extern -->
 	<script  type="text/javascript" src="js/javascript.js"></script>
@@ -32,65 +36,55 @@
 	<header></header>
 	<section>
 		<article>
-
-			<form id="formulari" onsubmit="return valida_form();" method="POST" action="action.php">
+			<form id="formulari"  method="POST" action="php/pellicules_add.php" enctype="multipart/form-data">
+				<h1>AFEGEIX UNA PEL·LÍCULA</h1>
 					<div>
-						<label>Titol <span>*</span></label>
-						<input type="text" name="nom" id="nom" placeholder="Introdueix el teu nom" onblur="valida_nom();"><br>
-						<div class="error" id="error_nom"></div>
+						<label>Títol <span>*</span></label>
+						<input type="text" name="titol" id="titol" placeholder="titol" onblur="valida_nom();"><br>
+						<div class="error" id="error_titol"></div>
 					</div>
 					<div>
-						<label>Director <span>*</span></label>
-						<input type="text" name="cognom" id="cognom" placeholder="el teu cognom" onblur="valida_cognom();"><br>
-						<div class="error" id="error_cognom"></div>
-					</div>
-					<div>
-						<label>Número de comanda</label>
-						<input type="number" name="comanda" id="comanda" placeholder="933533833" onblur="valida_comanda()">
-						<div class="error" id="error_comanda"></div>
+						<label>Director<span>*</span></label>
+						<input type="text" name="director" id="director" placeholder="director" onblur="valida_cognom();"><br>
+						<div class="error" id="error_director"></div>
 					</div>
 					<div>
 						<label>Any<span>*</span></label>
-						<input type="date" name="Edat" id="Edat">
+						<input type="number" name="any" id="any">
 					</div>
-
+					<div>
+						<label>País<span>*</span></label>
+						<input type="text" name="pais" id="pais" placeholder="pais" onblur="valida_cognom();"><br>
+						<div class="error" id="error_pais"></div>
+					</div>
 					<div>
 						<label>Animació <span>*</span></label>
-						<input type="radio" name="online" id="online_si" value="si" onblur="valida_online()"><label>Sí</label>
-						<input type="radio" name="online" id="online_no" value="no" onblur="valida_online()"><label>No</label>
+						<input type="radio" name="animacio" id="animacio_si" value="si" onblur="valida_online()"><label>Sí</label>
+						<input type="radio" name="animacio" id="animacio_no" value="no" onblur="valida_online()"><label>No</label>
 						<span class="error" id="error_online"></span>
 					</div>
 					<div>
-								<label>País<span>*</span></label>
-							<select name="select" id="selected">
-								<option value="No ha arribat el paquet" selected>No ha arribat el paquet</option>
-								<option value="No coincideix amb la comanda">No coincideix amb la comanda</option>
-								<option value="Cambiar direcció d'entrega">Cambiar direcció d'entrega</option>
-							</select>
-					</div>
-
-					<div>
-						<label>Animació<span>*</span></label>
-						<input type="email" name="email" id="email" placeholder="exemple@exemple.cat">
+						<label>Català <span>*</span></label>
+						<input type="text" name="catala" id="catala" placeholder="catala" onblur="valida_nom();"><br>
+						<div class="error" id="error_nom"></div>
 					</div>
 					<div>
-						<label>Telèfon</label>
-						<input type="number" name="number" id="number" placeholder="933533833">
+						<label>Puntuació</label>
+						<input type="number" name="puntuacio" id="puntuacio" placeholder="10" onblur="valida_comanda()">
+						<div class="error" id="error_comanda"></div>
 					</div>
-
 					<div id="obeservacions">
-						<p>Si necessita indicar algún tipus d'inforació extra faci-ho aquí:</p>
+						<p> Observacions:</p>
 					</div>
 					<div>
 							<textarea name="textarea" rows="10" cols="50" placeholder="Escriu aquí els teus comentaris"></textarea>
-
+					</div>
+					<div>
+						<label>Portada<span>*</span></label>
+						<input type="file" name="email" id="email" placeholder="exemple@exemple.cat">
 					</div>
 				</div>
-				<div>
-					<label><a href="condicions.html">Acepto les condicions</a></label>
-					<input type="checkbox" name="Condicions" id="condicions" value="Acepto les condicions">
-					<div class="error" id="error_condicions"></div>
-				</div>
+
 				<div id="botones">
 				<input type="submit" name="enviar" value="Enviar" id="enviar">
 				<input type="reset" name="cancel·lar" id="cancel·lar">
