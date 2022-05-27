@@ -37,7 +37,8 @@ $.getJSON("php/pellicules_list.php", function(pellicules){
       "<p>"+pellicules[n]["any"]+"</p>"+
       "<p>"+pellicules[n]["pais"]+"</p>"+
       "<p class=estrelles>"+estrelles+"</p>"+
-      "<a id=google href='https://www.google.com/search?q="+pellicules[n]["titol"]+" "+["director"]+"'><img src=img/icons/google.png></a>"
+      "<a id=google href='https://www.google.com/search?q="+pellicules[n]["titol"]+" "+["director"]+"'><img src=img/icons/google.png></a>"+
+      "<a id=eliminar href='php/eliminar_pellicula.php?id="+pellicules[n]["id"]+"'><img src=img/icons/delete.png></a>"+
     "</article>";
   }
 

@@ -1,7 +1,9 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  background: #2B81B9;
+  background-image:url("../img/univers.jpg");
+  background-repeat:no-repeat;
+
   text-align: center;
   color:white;
   display:flex;
@@ -15,6 +17,7 @@ h1{
 article {
   background: black ;
   width:100%;
+  opacity: 0.8;
         }
 
 label {
@@ -34,8 +37,8 @@ p{
   color:#a4a5a6;
   font-size:14px;
   padding: 20px;
-
 }
+
 h2{
   font-family: 'Bungee', cursive;
   background: linear-gradient(4deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(37,150,190,1) 63%);
@@ -43,8 +46,8 @@ h2{
   font-size:30px;
   background: #2596be;
   color: #eeeee4;
-
     }
+
 #enviar{
   width: 10%;
   padding:10px;

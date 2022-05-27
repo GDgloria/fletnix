@@ -5,9 +5,15 @@ body{
   background: black;
 }
 
+#eliminar{
+  width: 20px;;
+}
+
 #description_slide{
-  font-size: 12px;
-  color:white;
+  font-size: 14px;
+  color:#f4c5fc;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
 }
 .slider{
   width: 100%;
@@ -27,21 +33,32 @@ body{
     font-size: 60px;}
   #button_slide{
     font-size: 30px;}
-  #description_slide{
-    font-size: 20px;}
 
-  #button_slide {
-    	box-shadow: 0px 10px 14px -7px #276873;
-    	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-    	background-color:#599bb3;
-    	border-radius:8px;
+    #button_slide{
+    	box-shadow:inset 0px 1px 0px 0px #efdcfb;
+    	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+    	background-color:#dfbdfa;
+    	border-radius:6px;
+    	border:1px solid #c584f3;
     	display:inline-block;
     	cursor:pointer;
     	color:#ffffff;
-    	font-size:20px;
+    	font-family:Arial;
+    	font-size:15px;
     	font-weight:bold;
-    	padding:13px 32px;
-    	text-shadow:0px 1px 0px #3d768a;}
+    	padding:6px 24px;
+    	text-decoration:none;
+    	text-shadow:0px 1px 0px #9752cc;
+    }
+    #button_slide {
+    	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+    	background-color:#bc80ea;
+    }
+    #button_slide:active {
+    	position:relative;
+    	top:1px;
+    }
+
 
 /*Desktop*/
   @media screen and (max-width: 700px){
